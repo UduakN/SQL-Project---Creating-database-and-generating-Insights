@@ -2,11 +2,14 @@
 
 ![image](https://github.com/UduakN/SQL-Project---Creating-database-and-generating-Insights/assets/128192166/5117464b-48db-4dcc-86b5-61ccd99bac7d)
 
+
 In this project, I created company_ltd database. The database created was used to identify trends, give insights and solutions to the company. MySQL workbench was used for this project.
+
 
 Company_ltd database consists of salestable, customertable and stafftable.
  
-I created company_ltd database using CREATE DATABASE company_ltd. I proceeded to create each table and its content. 
+I created company_ltd database using CREATE DATABASE company_ltd. I proceeded to create each table and its content.[company_ltd database.txt](https://github.com/UduakN/SQL-Project---Creating-database-and-generating-Insights/files/11682669/company_ltd.database.txt)
+
 
 ![image](https://github.com/UduakN/SQL-Project---Creating-database-and-generating-Insights/assets/128192166/633c96e9-2d01-409c-ac70-3cbb39f43457)
 
@@ -19,19 +22,20 @@ I created company_ltd database using CREATE DATABASE company_ltd. I proceeded to
 
 USE company_ltd;
 
-/* How many staff do we have in the company? */
+# 1.) How many staff do we have in the company?
 
-SELECT count(distinct MatriculeNo) AS Number_of_Staff
+SELECT COUNT(DISTINCT MatriculeNo) AS Number_of_Staff
 from stafftable ;
 
-/* How many staff are younger than 30 years?*/
+# 2.) How many staff are younger than 30 years?
 
-SELECT count(distinct MatriculeNo) AS Staff_Below_30
+SELECT COUNT(DISTINCT MatriculeNo) AS Staff_Below_30
 from stafftable
 where Age < 30;
 
 # 3.) How many staff are between 30 and 25 years?
-select count(distinct MatriculeNo) AS Staff_Between_25_and_30 
+
+SELECT COUNT(DISTINCT MatriculeNo) AS Staff_Between_25_and_30 
 from stafftable
 where Age between 25 and 30;
 
