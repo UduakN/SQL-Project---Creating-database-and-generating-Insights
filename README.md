@@ -41,10 +41,10 @@ where Age between 25 and 30;
 
 # 4.) Select all the female staff and sort their age in descending order (from the oldest to the youngest)
 
-select *  
-from stafftable
-where StaffSex = 'Female'
-order by Age desc;
+SELECT *  
+FROM stafftable
+WHERE StaffSex = 'Female'
+ORDER BY Age desc;
 
 # 5.) What is the Average age of Peter and Nina?
 
